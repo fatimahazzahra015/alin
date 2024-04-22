@@ -167,7 +167,7 @@
 
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="Intro.html">
   
   
   
@@ -199,17 +199,14 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    HALO!!
+                <a class="reference internal" href="Intro.html">
+                    KOMPUTASI ALJABAR LINIER DAN MATRIKS
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Linier%20Dan%20Metode%20Eliminasi%20Gaussias.html"><strong>SISTEM LINIER DAN METODE ELIMINASI GAUSSIAS</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>ALJABAR MATRIKS</strong></a></li>
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="Matriks%20Inversi.html"><strong>MATRIK INVERSI</strong></a></li>
 </ul>
 
@@ -437,70 +434,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>ALJABAR MATRIKS</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-matriks">Pengertian Matriks:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-contoh-matriks">Berikut Contoh Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-matriks"><strong>Pengertian Matriks:</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dengan-numpy"><strong>Implementasi dengan Numpy</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks"><strong>Operasi pada Matriks</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks"><strong>1. Penjumlahan Matriks :</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks"><strong>2. Pengurangan Matriks:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks"><strong>3. Perkalian Matriks:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks"><strong>4. Transpose Matriks</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dengan-numpy">Implementasi dengan Numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-perkalian-matriks"><strong>Program Perkalian Matriks</strong></a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks">Operasi pada Matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">1.Penjumlahan Matriks :</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#begin-align-a-begin-bmatrix-3-1-4-5-2-1-2-8-5-end-bmatrix-b-begin-bmatrix-4-0-8-0-7-9-3-6-1-end-bmatrix-a-b-begin-bmatrix-3-4-1-0-4-8-5-0-2-7-1-9-2-3-8-6-5-1-end-bmatrix">\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A + B =
-\begin{bmatrix}
-3+(-4)&amp;1+0&amp;4+8\
-5+0&amp;2+7&amp;1+9\
-2+3&amp;8+6&amp;5+1
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks">2.Pengurangan Matriks:</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A - B =
-\begin{bmatrix}
-3-(-4)&amp;1-0&amp;4-8\
-5-0&amp;2-7&amp;1-9\
-2-3&amp;8-6&amp;5-1
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">3.Perkalian Matriks:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">4.Transpose Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-perkalian-matriks">Program Perkalian Matriks</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -514,43 +458,44 @@ A - B =
   <section class="tex2jax_ignore mathjax_ignore" id="aljabar-matriks">
 <h1><strong>ALJABAR MATRIKS</strong><a class="headerlink" href="#aljabar-matriks" title="Link to this heading">#</a></h1>
 <section id="pengertian-matriks">
-<h2>Pengertian Matriks:<a class="headerlink" href="#pengertian-matriks" title="Link to this heading">#</a></h2>
+<h2><strong>Pengertian Matriks:</strong><a class="headerlink" href="#pengertian-matriks" title="Link to this heading">#</a></h2>
 <p>Matriks adalah susunan bilagan real(atau elemen-elemen) yang disusun dalam baris dan kolom sehingga membentuk persegi ataupun persegi panjang. Setiap elemen memiliki posisi unik dalam matriks, ditentukan oleh baris dan kolomnya. Misalnya, matriks 2x3 memiliki 2 baris dan 3 kolom. suatu matriks biasa diberi nama dengan menggunakan huruf kapital (seperti A, B dll) dan elemennya dinyatakan dengan huruf kecil.</p>
-<section id="berikut-contoh-matriks">
-<h3>Berikut Contoh Matriks<a class="headerlink" href="#berikut-contoh-matriks" title="Link to this heading">#</a></h3>
-<p>\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-C=
-\begin{bmatrix}
-8&amp;9\
-4&amp;0\
-9&amp;2
-\end{bmatrix}
-&amp;&amp;
-D=
-\begin{bmatrix}
-1&amp;5&amp;8\
-2&amp;9&amp;6\
-7&amp;6&amp;0
-\end{bmatrix}
-\end{align*}</p>
-</section>
+<p>Berikut Contoh Matriks :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A = 
+\left[ \begin{array}{cccc} 3&amp;1&amp;4\\
+5&amp;2&amp;1\\
+2&amp;8&amp;5 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} B = 
+\left[ \begin{array}{cccc} -4&amp;0&amp;8\\
+0&amp;7&amp;9\\
+3&amp;6&amp;1 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} c = 
+\left[ \begin{array}{cccc} 8&amp;9\\
+4&amp;0\\
+9&amp;2 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} c = 
+\left[ \begin{array}{cccc}1&amp;5&amp;8\\
+2&amp;9&amp;6\\
+7&amp;6&amp;0 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
 </section>
 <section id="implementasi-dengan-numpy">
-<h2>Implementasi dengan Numpy<a class="headerlink" href="#implementasi-dengan-numpy" title="Link to this heading">#</a></h2>
+<h2><strong>Implementasi dengan Numpy</strong><a class="headerlink" href="#implementasi-dengan-numpy" title="Link to this heading">#</a></h2>
 <p>Saat array dibuat, informasi ini disimpan sebagai bagian dari  objek array dan dapat diakses dengan metode yang disebut shape. Jika C adalah sebuah array, objek C.shape itu sendiri adalah sebuah array yang memiliki dua nilai masukan. Yang pertama (dengan indeks 0!) adalah jumlah baris, dan yang kedua (dengan indeks 1!) adalah jumlah kolom.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -574,44 +519,46 @@ D=
 </div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="operasi-pada-matriks">
-<h1>Operasi pada Matriks<a class="headerlink" href="#operasi-pada-matriks" title="Link to this heading">#</a></h1>
+<section id="operasi-pada-matriks">
+<h2><strong>Operasi pada Matriks</strong><a class="headerlink" href="#operasi-pada-matriks" title="Link to this heading">#</a></h2>
 <p>Operasi matriks adalah serangkaian operasi atau tindakan yang dilakukan pada matriks, baik itu untuk mengubah matriks ataupun menggabungkan matriks. Berikut beberapa operasi matriks yang sering digunakan:</p>
 <section id="penjumlahan-matriks">
-<h2>1.Penjumlahan Matriks :<a class="headerlink" href="#penjumlahan-matriks" title="Link to this heading">#</a></h2>
+<h3><strong>1. Penjumlahan Matriks :</strong><a class="headerlink" href="#penjumlahan-matriks" title="Link to this heading">#</a></h3>
 <p>Operasi ini melibatkan penambahan elemen-elemen yang berada pada posisi yang sama dari dua matriks yang memiliki ordo yang sama. Artinya kedua matriks ini harus memiliki baris dan kolom yang sama.</p>
 <p>CONTOH PENJUMLAHAN MATRIKS A + B :</p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="begin-align-a-begin-bmatrix-3-1-4-5-2-1-2-8-5-end-bmatrix-b-begin-bmatrix-4-0-8-0-7-9-3-6-1-end-bmatrix-a-b-begin-bmatrix-3-4-1-0-4-8-5-0-2-7-1-9-2-3-8-6-5-1-end-bmatrix">
-<h1>\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A + B =
-\begin{bmatrix}
-3+(-4)&amp;1+0&amp;4+8\
-5+0&amp;2+7&amp;1+9\
-2+3&amp;8+6&amp;5+1
-\end{bmatrix}<a class="headerlink" href="#begin-align-a-begin-bmatrix-3-1-4-5-2-1-2-8-5-end-bmatrix-b-begin-bmatrix-4-0-8-0-7-9-3-6-1-end-bmatrix-a-b-begin-bmatrix-3-4-1-0-4-8-5-0-2-7-1-9-2-3-8-6-5-1-end-bmatrix" title="Link to this heading">#</a></h1>
-<p>\begin{bmatrix}
--1&amp;1&amp;12\
-5&amp;9&amp;10\
-5&amp;14&amp;6
-\end{bmatrix}
-\end{align*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A = 
+\left[ \begin{array}{cccc} 3&amp;1&amp;4\\
+5&amp;2&amp;1\\
+2&amp;8&amp;5 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} B = 
+\left[ \begin{array}{cccc} -4&amp;0&amp;8\\
+0&amp;7&amp;9\\
+3&amp;6&amp;1 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A + B = 
+\left[ \begin{array}{cccc}
+3+(-4)&amp;1+0&amp;4+8\\
+5+0&amp;2+7&amp;1+9\\
+2+3&amp;8+6&amp;5+1 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} = 
+\left[ \begin{array}{cccc} -1&amp;1&amp;12\\
+5&amp;9&amp;10\\
+5&amp;14&amp;6\end{array}\right]
+\end{equation}
+\end{split}\]</div>
 <p>BERIKUT PROGRAM UNTUK PENJUMLAHAN MATRIKS:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -635,40 +582,44 @@ Sifat di atas merupakan sifat komutatif karena A+B = B+A
 </div>
 </div>
 </div>
+</section>
 <section id="pengurangan-matriks">
-<h2>2.Pengurangan Matriks:<a class="headerlink" href="#pengurangan-matriks" title="Link to this heading">#</a></h2>
+<h3><strong>2. Pengurangan Matriks:</strong><a class="headerlink" href="#pengurangan-matriks" title="Link to this heading">#</a></h3>
 <p>Operasi ini melibatkan pengurangan elemen-elemen yang berada pada posisi yang sama dari dua matriks yang memiliki ordo yang sama. Artinya kedua matriks ini harus memiliki baris dan kolom yang sama.</p>
 <p>CONTOH PENGURANGAN MATRIKS:</p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A - B =
-\begin{bmatrix}
-3-(-4)&amp;1-0&amp;4-8\
-5-0&amp;2-7&amp;1-9\
-2-3&amp;8-6&amp;5-1
-\end{bmatrix}<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>\begin{bmatrix}
-7&amp;1&amp;4\
-5&amp;-5&amp;-8\
--1&amp;2&amp;4
-\end{bmatrix}
-\end{align*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A = 
+\left[ \begin{array}{cccc} 3&amp;1&amp;4\\
+5&amp;2&amp;1\\
+2&amp;8&amp;5 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} B = 
+\left[ \begin{array}{cccc} -4&amp;0&amp;8\\
+0&amp;7&amp;9\\
+3&amp;6&amp;1 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A - B = 
+\left[ \begin{array}{cccc}
+3-(-4)&amp;1-0&amp;4-8\\
+5-0&amp;2-7&amp;1-9\\
+2-3&amp;8-6&amp;5-1\end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} = 
+\left[ \begin{array}{cccc} 7&amp;1&amp;4\\
+5&amp;-5&amp;-8\\
+-1&amp;2&amp;4\end{array}\right]
+\end{equation}
+\end{split}\]</div>
 <p>BERIKUT PROGRAM UNTUK PENGURANGAN MATRIKS:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -692,39 +643,45 @@ Sifat di BUKAN merupakan sifat komutatif karena A-B TIDAK SAMA DENGAN B-A
 </div>
 </div>
 </div>
+</section>
 <section id="perkalian-matriks">
-<h2>3.Perkalian Matriks:<a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h2>
+<h3><strong>3. Perkalian Matriks:</strong><a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h3>
 <p>Operasi ini melibatkan perkalian elemen-elemen matriks. Untuk melakukan perkalian matriks A dan B, jumlah kolom dalam matriks A harus sama dengan jumlah baris dalam matriks B. Contoh matriks A memiliki ordo atau ukuran mxn, maka matriks B harus memiliki ordo atau ukuran nxp. Sehingga hasil dari perkalian tersebut akan menghasilkan matriks baru dengan ukuran mxp. Hasilnya akan memiliki jumlah baris yang sama dengan matriks A dan jumlah kolom yang sama dengan matriks B.</p>
 <p>CONTOH PERKALIAN MATRIKS:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\\
+\[\begin{split}
+\begin{equation} A = 
+\left[ \begin{array}{cccc} 3&amp;1&amp;4\\
 5&amp;2&amp;1\\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\\
+2&amp;8&amp;5 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} B = 
+\left[ \begin{array}{cccc} -4&amp;0&amp;8\\
 0&amp;7&amp;9\\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A X B =
-\begin{bmatrix}
+3&amp;6&amp;1 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A x B = 
+\left[ \begin{array}{cccc}
 3(-4)+1(0)+4(3) &amp;3(0)+1(7)+4(6) &amp;3(8)+1(9)+4(1)\\
 5(-4)+2(0)+1(3) &amp;5(0)+2(7)+1(6) &amp;5(8)+2(9)+1(1)\\
-2(-4)+8(0)+5(3) &amp;2(0)+8(7)+5(6) &amp;2(8)+8(9)+5(1)
-\end{bmatrix}
-=
-\begin{bmatrix}
+2(-4)+8(0)+5(3) &amp;2(0)+8(7)+5(6) &amp;2(8)+8(9)+5(1)\end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} = 
+\left[ \begin{array}{cccc} 
 0&amp;31&amp;37\\
 -17&amp;20&amp;59\\
-7&amp;86&amp;93
-\end{bmatrix}
-\end{align*}\end{split}\]</div>
+7&amp;86&amp;93\end{array}\right]
+\end{equation}
+\end{split}\]</div>
 <p>BERIKUT PROGRAM UNTUK PERKALIAN MATRIKS:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -865,23 +822,26 @@ BA=
 </div>
 </section>
 <section id="transpose-matriks">
-<h2>4.Transpose Matriks<a class="headerlink" href="#transpose-matriks" title="Link to this heading">#</a></h2>
+<h3><strong>4. Transpose Matriks</strong><a class="headerlink" href="#transpose-matriks" title="Link to this heading">#</a></h3>
 <p>Transpose matriks adalah matriks baru yang diperoleh dengan cara menukar elemen-elemen baris menjadi elemen kolom atau sebaliknya. Jika sebuah matriks berukuran M X N, maka transpose matriks tersebut memiliki ordo N X M.</p>
 <p>CONTOH TRANSPOSE MATRIKS:</p>
-<p>\begin{align*}
-C=
-\begin{bmatrix}
-8&amp;9\
-4&amp;0\
-9&amp;2
-\end{bmatrix}
-&amp;&amp;
-CT (C Transposre)=
-\begin{bmatrix}
-8&amp;4&amp;9\
-9&amp;0&amp;2
-\end{bmatrix}
-\end{align*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} C = 
+\left[ \begin{array}{cccc}
+8&amp;9\\
+4&amp;0\\
+9&amp;2\end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} CT (C Transposre) =
+\left[ \begin{array}{cccc}
+8&amp;4&amp;9\\
+9&amp;0&amp;2\end{array}\right]
+\end{equation}
+\end{split}\]</div>
 <p>BERIKUT PROGRAM UNTUK MENG-TRANSPOSE MATRIKS:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -925,8 +885,9 @@ Dapat disimpulkan bahwa C_transpose X C tidak sama dengan C X C_transpose
 </div>
 </div>
 </section>
+</section>
 <section id="program-perkalian-matriks">
-<h2>Program Perkalian Matriks<a class="headerlink" href="#program-perkalian-matriks" title="Link to this heading">#</a></h2>
+<h2><strong>Program Perkalian Matriks</strong><a class="headerlink" href="#program-perkalian-matriks" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">perkalian</span><span class="p">(</span><span class="n">matrix1</span><span class="p">,</span> <span class="n">matrix2</span><span class="p">):</span>
@@ -1021,70 +982,17 @@ Dapat disimpulkan bahwa C_transpose X C tidak sama dengan C X C_transpose
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>ALJABAR MATRIKS</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-matriks">Pengertian Matriks:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-contoh-matriks">Berikut Contoh Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-matriks"><strong>Pengertian Matriks:</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dengan-numpy"><strong>Implementasi dengan Numpy</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks"><strong>Operasi pada Matriks</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks"><strong>1. Penjumlahan Matriks :</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks"><strong>2. Pengurangan Matriks:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks"><strong>3. Perkalian Matriks:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks"><strong>4. Transpose Matriks</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dengan-numpy">Implementasi dengan Numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-perkalian-matriks"><strong>Program Perkalian Matriks</strong></a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks">Operasi pada Matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">1.Penjumlahan Matriks :</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#begin-align-a-begin-bmatrix-3-1-4-5-2-1-2-8-5-end-bmatrix-b-begin-bmatrix-4-0-8-0-7-9-3-6-1-end-bmatrix-a-b-begin-bmatrix-3-4-1-0-4-8-5-0-2-7-1-9-2-3-8-6-5-1-end-bmatrix">\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A + B =
-\begin{bmatrix}
-3+(-4)&amp;1+0&amp;4+8\
-5+0&amp;2+7&amp;1+9\
-2+3&amp;8+6&amp;5+1
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks">2.Pengurangan Matriks:</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">\begin{align*}
-A=
-\begin{bmatrix}
-3&amp;1&amp;4\
-5&amp;2&amp;1\
-2&amp;8&amp;5
-\end{bmatrix}
-&amp;&amp;
-B=
-\begin{bmatrix}
--4&amp;0&amp;8\
-0&amp;7&amp;9\
-3&amp;6&amp;1
-\end{bmatrix}
-&amp;&amp;
-A - B =
-\begin{bmatrix}
-3-(-4)&amp;1-0&amp;4-8\
-5-0&amp;2-7&amp;1-9\
-2-3&amp;8-6&amp;5-1
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">3.Perkalian Matriks:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">4.Transpose Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-perkalian-matriks">Program Perkalian Matriks</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

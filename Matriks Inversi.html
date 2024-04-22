@@ -164,7 +164,7 @@
 
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="Intro.html">
   
   
   
@@ -196,17 +196,14 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    HALO!!
+                <a class="reference internal" href="Intro.html">
+                    KOMPUTASI ALJABAR LINIER DAN MATRIKS
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Linier%20Dan%20Metode%20Eliminasi%20Gaussias.html"><strong>SISTEM LINIER DAN METODE ELIMINASI GAUSSIAS</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar%20Matriks.html"><strong>ALJABAR MATRIKS</strong></a></li>
-
-
-
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>MATRIK INVERSI</strong></a></li>
 </ul>
 
@@ -435,7 +432,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-matriks-invers">Sifat-sifat Matriks invers :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-matriks-invers">Sifat-sifat Matriks invers :</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-1">Persamaan 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-2">Persamaan 2 :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-3">Persamaan 3 :</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -523,6 +525,13 @@ document.write(`
 </div>
 </div>
 </div>
+<section id="persamaan-1">
+<h3>Persamaan 1<a class="headerlink" href="#persamaan-1" title="Link to this heading">#</a></h3>
+<p>\begin{align*}4x_1 + 0x_2 + 0x_3 + 0x_4 = 4 \
+0x_1 + 0x_2 + 2x_3 + 0x_4 = 2 \
+0x_1 + 1x_2 + 2x_3 + 0x_4 = 3 \
+1x_1 + 0x_2 + 0x_3 + 1x_4 = 2 \
+\end{align*}</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh 1 :</span>
@@ -661,6 +670,13 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="persamaan-2">
+<h3>Persamaan 2 :<a class="headerlink" href="#persamaan-2" title="Link to this heading">#</a></h3>
+<p>\begin{align*}0x_1 + 0x_2 + 0x_3 + 1x_4 = -3\
+4x_1 + 2x_2 + 0x_3 + (-4)x_4 = 22\
+(-2)x_1 + 0x_2 + 1x_3 + 2x_4 = -5\
+1x_1 + 0x_2 + 0x_3 + 1x_4 = -1\end{align*}</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh 2 :</span>
@@ -833,163 +849,179 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="persamaan-3">
+<h3>Persamaan 3 :<a class="headerlink" href="#persamaan-3" title="Link to this heading">#</a></h3>
+<p>\begin{align*}3x_1 + 2x_2 + 1x_3 + 0x_4 = -3\
+0x_1 + 1x_2 + 1x_3 + 0x_4 = 22\
+2x_1 + 1x_2 + 1x_3 + 0x_4 = -5\
+0x_1 + 2x_2 + 4x_3 + 1x_4 = -1\end{align*}</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh 3 :</span>
-<span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3 2 1 3 1 0 0 0]
- [0 1 2 3 0 1 0 0]
- [2 1 1 1 0 0 1 0]
- [0 2 3 2 0 0 0 1]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3 2 1 0 1 0 0 0]
+ [0 1 1 0 0 1 0 0]
+ [2 1 1 0 0 0 1 0]
+ [0 2 4 1 0 0 0 1]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">a3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 0 dengan baris 2 yang telah dikalikan dengan -1</span>
+<span class="n">b3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">a3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  1.  0.  2.  1.  0. -1.  0.]
- [ 0.  1.  2.  3.  0.  1.  0.  0.]
- [ 2.  1.  1.  1.  0.  0.  1.  0.]
- [ 0.  2.  3.  2.  0.  0.  0.  1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  1.  0.  0.  1.  0. -1.  0.]
+ [ 0.  1.  1.  0.  0.  1.  0.  0.]
+ [ 2.  1.  1.  0.  0.  0.  1.  0.]
+ [ 0.  2.  4.  1.  0.  0.  0.  1.]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">b3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 2 dengan baris 0 yang telah dikalikan dengan -2</span>
+<span class="n">c3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">b3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">c3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  1.  0.  2.  1.  0. -1.  0.]
- [ 0.  1.  2.  3.  0.  1.  0.  0.]
- [ 0. -1.  1. -3. -2.  0.  3.  0.]
- [ 0.  2.  3.  2.  0.  0.  0.  1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  1.  0.  0.  1.  0. -1.  0.]
+ [ 0.  1.  1.  0.  0.  1.  0.  0.]
+ [ 0. -1.  1.  0. -2.  0.  3.  0.]
+ [ 0.  2.  4.  1.  0.  0.  0.  1.]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">c3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 0 dengan baris 1 yang telah dikalikan dengan -1</span>
+<span class="n">d3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">c3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">d3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -2. -1.  1. -1. -1.  0.]
- [ 0.  1.  2.  3.  0.  1.  0.  0.]
- [ 0. -1.  1. -3. -2.  0.  3.  0.]
- [ 0.  2.  3.  2.  0.  0.  0.  1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -1.  0.  1. -1. -1.  0.]
+ [ 0.  1.  1.  0.  0.  1.  0.  0.]
+ [ 0. -1.  1.  0. -2.  0.  3.  0.]
+ [ 0.  2.  4.  1.  0.  0.  0.  1.]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">d3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 2 dengan baris 1 yang telah dikalikan dengan 1</span>
+<span class="n">e3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">d3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">e3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -2. -1.  1. -1. -1.  0.]
- [ 0.  1.  2.  3.  0.  1.  0.  0.]
- [ 0.  0.  3.  0. -2.  1.  3.  0.]
- [ 0.  2.  3.  2.  0.  0.  0.  1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -1.  0.  1. -1. -1.  0.]
+ [ 0.  1.  1.  0.  0.  1.  0.  0.]
+ [ 0.  0.  2.  0. -2.  1.  3.  0.]
+ [ 0.  2.  4.  1.  0.  0.  0.  1.]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">e3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># menambah baris 3 dengan baris 1 yang telah dikalikan dengan -2</span>
+<span class="n">f3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">e3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">f3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -2. -1.  1. -1. -1.  0.]
- [ 0.  1.  2.  3.  0.  1.  0.  0.]
- [ 0.  0.  3.  0. -2.  1.  3.  0.]
- [ 0.  0. -1. -4.  0. -2.  0.  1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -1.  0.  1. -1. -1.  0.]
+ [ 0.  1.  1.  0.  0.  1.  0.  0.]
+ [ 0.  0.  2.  0. -2.  1.  3.  0.]
+ [ 0.  0.  2.  1.  0. -2.  0.  1.]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">f3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengalikan baris 2 dengan 1/2</span>
+<span class="n">g3</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">f3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">g3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0. -2. -1.  1. -1. -1.  0.]
- [ 0.  1.  2.  3.  0.  1.  0.  0.]
- [ 0.  0.  1. -8. -2. -3.  3.  2.]
- [ 0.  0. -1. -4.  0. -2.  0.  1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.   0.  -1.   0.   1.  -1.  -1.   0. ]
+ [ 0.   1.   1.   0.   0.   1.   0.   0. ]
+ [ 0.   0.   1.   0.  -1.   0.5  1.5  0. ]
+ [ 0.   0.   2.   1.   0.  -2.   0.   1. ]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">g3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 0 dengan baris 2 yang telah dikalikan dengan 1</span>
+<span class="n">h3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">g3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">h3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[  1.   0.   0. -17.  -3.  -7.   5.   4.]
- [  0.   1.   2.   3.   0.   1.   0.   0.]
- [  0.   0.   1.  -8.  -2.  -3.   3.   2.]
- [  0.   0.  -1.  -4.   0.  -2.   0.   1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.   0.   0.   0.   0.  -0.5  0.5  0. ]
+ [ 0.   1.   1.   0.   0.   1.   0.   0. ]
+ [ 0.   0.   1.   0.  -1.   0.5  1.5  0. ]
+ [ 0.   0.   2.   1.   0.  -2.   0.   1. ]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">h3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 1 dengan baris 2 yang telah dikalikan dengan -1</span>
+<span class="n">i3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">h3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[  1.   0.   0. -17.  -3.  -7.   5.   4.]
- [  0.   1.   0.  19.   4.   7.  -6.  -4.]
- [  0.   0.   1.  -8.  -2.  -3.   3.   2.]
- [  0.   0.  -1.  -4.   0.  -2.   0.   1.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.   0.   0.   0.   0.  -0.5  0.5  0. ]
+ [ 0.   1.   0.   0.   1.   0.5 -1.5  0. ]
+ [ 0.   0.   1.   0.  -1.   0.5  1.5  0. ]
+ [ 0.   0.   2.   1.   0.  -2.   0.   1. ]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">j3</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">i3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.08</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambah baris 3 dengan baris 2 yang telah dikalikan dengan -2</span>
+<span class="n">j3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">i3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">j3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[  1.     0.     0.   -17.    -3.    -7.     5.     4.  ]
- [  0.     1.     0.    19.     4.     7.    -6.    -4.  ]
- [  0.     0.     1.    -8.    -2.    -3.     3.     2.  ]
- [  0.     0.    -0.08  -0.32   0.    -0.16   0.     0.08]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.   0.   0.   0.   0.  -0.5  0.5  0. ]
+ [ 0.   1.   0.   0.   1.   0.5 -1.5  0. ]
+ [ 0.   0.   1.   0.  -1.   0.5  1.5  0. ]
+ [ 0.   0.   0.   1.   2.  -3.  -3.   1. ]]
 </pre></div>
 </div>
 </div>
@@ -997,60 +1029,40 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mencari x1, x2, x3, x4</span>
-<span class="n">h3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">11.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span><span class="o">-</span><span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">14</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
-<span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">11</span><span class="p">],</span> <span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">l3</span><span class="nd">@m</span><span class="p">)</span>
+<span class="n">h3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">15</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">h3</span><span class="nd">@m</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">30</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">h3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">11.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span><span class="o">-</span><span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">14</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">11</span><span class="p">],</span> <span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="n">l3</span><span class="nd">@m</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;l3&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-1.]
+ [ 3.]
+ [ 2.]
+ [ 1.]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
-<span class="n">h3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">11.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span><span class="o">-</span><span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">14</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pembuktian</span>
+<span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">h3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a3</span><span class="nd">@h3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.  0.  0.  0.]
- [ 0.  1. -3. -1.]
- [ 0.  0.  1.  0.]
- [ 0.  0. -3.  0.]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1. 0. 0. 0.]
+ [0. 1. 0. 0.]
+ [0. 0. 1. 0.]
+ [0. 0. 0. 1.]]
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
-<span class="n">I</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a3</span> <span class="o">@</span> <span class="n">I</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1. 0. 2. 0.]
- [0. 2. 3. 1.]
- [3. 0. 7. 0.]
- [2. 0. 0. 1.]]
-</pre></div>
-</div>
-</div>
-</div>
+</section>
 </section>
 </section>
 
@@ -1110,7 +1122,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-matriks-invers">Sifat-sifat Matriks invers :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-matriks-invers">Sifat-sifat Matriks invers :</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-1">Persamaan 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-2">Persamaan 2 :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-3">Persamaan 3 :</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

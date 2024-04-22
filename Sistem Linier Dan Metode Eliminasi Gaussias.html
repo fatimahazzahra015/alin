@@ -89,7 +89,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="ALJABAR MATRIKS" href="Aljabar%20Matriks.html" />
-    <link rel="prev" title="HALO!!" href="intro.html" />
+    <link rel="prev" title="KOMPUTASI ALJABAR LINIER DAN MATRIKS" href="Intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -167,7 +167,7 @@
 
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="Intro.html">
   
   
   
@@ -199,17 +199,14 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    HALO!!
+                <a class="reference internal" href="Intro.html">
+                    KOMPUTASI ALJABAR LINIER DAN MATRIKS
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>SISTEM LINIER DAN METODE ELIMINASI GAUSSIAS</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar%20Matriks.html"><strong>ALJABAR MATRIKS</strong></a></li>
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="Matriks%20Inversi.html"><strong>MATRIK INVERSI</strong></a></li>
 </ul>
 
@@ -533,6 +530,12 @@ x_1+2x_2+3x_3=9\\
 </div>
 </div>
 <p>buat array NumPy dengan nilai-nilai ini. Kita akan memberi nama pada array A, sehingga kita bisa memanggilnya lagi nanti.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+8x_1 - 9x_2 + x_3 = 19\\
+1x_1 + 2x_2 + 3x_3 = 9\\
+2x_1 + 1x_2 + 1x_3 = 5
+\end{split}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -551,7 +554,7 @@ x_1+2x_2+3x_3=9\\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#pindahkan baris 0 ke baris 1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Memindahkan baris 0 ke baris 1</span>
 <span class="n">A1</span> <span class="o">=</span> <span class="n">RowSwap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A1</span><span class="p">)</span>
 </pre></div>
@@ -567,7 +570,7 @@ x_1+2x_2+3x_3=9\\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tambahkan -8 kali baris 0 ke baris 1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambahkan baris 1 dengan baris 0 yang sudah dikalikan dengan -8</span>
 <span class="n">A2</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A2</span><span class="p">)</span>
 </pre></div>
@@ -583,7 +586,7 @@ x_1+2x_2+3x_3=9\\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tambahkan -2 kali baris 0 ke baris 2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambahkan baris 2 dengan baris 0 yang sudah dikalikan dengan -2</span>
 <span class="n">A3</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A3</span><span class="p">)</span>
 </pre></div>
@@ -599,7 +602,7 @@ x_1+2x_2+3x_3=9\\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#kalikan baris 1 dengan -1/7</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengalikan baris 1 dengan -1/7</span>
 <span class="n">A4</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">A3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">7</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A4</span><span class="p">)</span>
 </pre></div>
@@ -615,7 +618,7 @@ x_1+2x_2+3x_3=9\\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tambahkan 3 kali baris 1 ke baris 2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menambahkan baris 2 dengan baris 1 yang sudah dikalikan dengan 3</span>
 <span class="n">A5</span> <span class="o">=</span> <span class="n">RowAdd</span><span class="p">(</span><span class="n">A4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A5</span><span class="p">)</span>
 </pre></div>
@@ -631,7 +634,7 @@ x_1+2x_2+3x_3=9\\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#kalikan baris 2 dengan 1/4.85714286</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengalikan baris 2 dengan 1/4.85714286</span>
 <span class="n">A6</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">A5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mf">4.85714286</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A6</span><span class="p">)</span>
 </pre></div>
@@ -653,7 +656,7 @@ x_3=2\\
 \)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#selesaikan persamaanya</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Nilai x1, x2, x3</span>
 <span class="n">x3</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x3 = &quot;</span><span class="p">,</span><span class="n">x3</span><span class="p">)</span>
 <span class="n">x2</span> <span class="o">=</span> <span class="mf">7.57142857</span><span class="o">-</span><span class="p">(</span><span class="mf">3.28571429</span><span class="o">*</span><span class="n">x3</span><span class="p">)</span>
@@ -704,12 +707,12 @@ x1 =  1
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>HALO!!</strong></p>
+        <p class="prev-next-title"><strong>KOMPUTASI ALJABAR LINIER DAN MATRIKS</strong></p>
       </div>
     </a>
     <a class="right-next"
