@@ -68,6 +68,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Matriks Inversi';</script>
     <script src="_static/design-tabs.js?v=36754332"></script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
@@ -527,11 +529,14 @@ document.write(`
 </div>
 <section id="persamaan-1">
 <h3>Persamaan 1<a class="headerlink" href="#persamaan-1" title="Link to this heading">#</a></h3>
-<p>\begin{align*}4x_1 + 0x_2 + 0x_3 + 0x_4 = 4 \
-0x_1 + 0x_2 + 2x_3 + 0x_4 = 2 \
-0x_1 + 1x_2 + 2x_3 + 0x_4 = 3 \
-1x_1 + 0x_2 + 0x_3 + 1x_4 = 2 \
-\end{align*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\\4x_1 + 0x_2 + 0x_3 + 0x_4 = 4 \\
+0x_1 + 0x_2 + 2x_3 + 0x_4 = 2 \\
+0x_1 + 1x_2 + 2x_3 + 0x_4 = 3 \\
+1x_1 + 0x_2 + 0x_3 + 1x_4 = 2 \\
+\\
+\end{split}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh 1 :</span>
@@ -673,10 +678,13 @@ document.write(`
 </section>
 <section id="persamaan-2">
 <h3>Persamaan 2 :<a class="headerlink" href="#persamaan-2" title="Link to this heading">#</a></h3>
-<p>\begin{align*}0x_1 + 0x_2 + 0x_3 + 1x_4 = -3\
-4x_1 + 2x_2 + 0x_3 + (-4)x_4 = 22\
-(-2)x_1 + 0x_2 + 1x_3 + 2x_4 = -5\
-1x_1 + 0x_2 + 0x_3 + 1x_4 = -1\end{align*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\\0x_1 + 0x_2 + 0x_3 + 1x_4 = -3\\
+4x_1 + 2x_2 + 0x_3 + (-4)x_4 = 22\\
+(-2)x_1 + 0x_2 + 1x_3 + 2x_4 = -5\\
+1x_1 + 0x_2 + 0x_3 + 1x_4 = -1\\
+\end{split}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh 2 :</span>
@@ -852,10 +860,13 @@ document.write(`
 </section>
 <section id="persamaan-3">
 <h3>Persamaan 3 :<a class="headerlink" href="#persamaan-3" title="Link to this heading">#</a></h3>
-<p>\begin{align*}3x_1 + 2x_2 + 1x_3 + 0x_4 = -3\
-0x_1 + 1x_2 + 1x_3 + 0x_4 = 22\
-2x_1 + 1x_2 + 1x_3 + 0x_4 = -5\
-0x_1 + 2x_2 + 4x_3 + 1x_4 = -1\end{align*}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\\3x_1 + 2x_2 + 1x_3 + 0x_4 = -3\\
+0x_1 + 1x_2 + 1x_3 + 0x_4 = 22\\
+2x_1 + 1x_2 + 1x_3 + 0x_4 = -5\\
+0x_1 + 2x_2 + 4x_3 + 1x_4 = -1\\
+\end{split}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contoh 3 :</span>
