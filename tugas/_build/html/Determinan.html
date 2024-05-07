@@ -434,8 +434,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-determinan"><strong>Sifat-sifat determinan :</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-kofaktor"><strong>Ekspansi Kofaktor</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-determinan"><strong>Sifat - Sifat Determinan :</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-segitiga-atas"><strong>Matriks Segitiga Atas</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-kofaktor"><strong>Ekspansi Kofaktor</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-ini-merupakan-matriks-4-x-4-yang-akan-dicari-determinannya-menggunakan-metode-langsung-dan-metode-manual">Berikut ini merupakan matriks 4 X 4 yang akan dicari determinannya menggunakan metode langsung dan metode manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian">Pembuktian :</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -449,9 +454,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="determinan">
 <h1><strong>DETERMINAN</strong><a class="headerlink" href="#determinan" title="Link to this heading">#</a></h1>
-<p>adalah ukuran skalar dari sebuah matriks atau selisih antara perkalian elemen-elemen pada diagonal utama dengan perkalian elemen-elemen pada diagonal sekunder.</p>
+<p>adalah ukuran skalar dari sebuah matriks atau selisih antara perkalian elemen-elemen pada diagonal utama dengan perkalian elemen-elemen pada diagonal sekunder. Determinan matriks hanya dapat dicari dengan matriks persegi. Determinan dari matriks A dapat ditulis <span class="math notranslate nohighlight">\(det(A)\)</span> atau <span class="math notranslate nohighlight">\(|A|\)</span>.</p>
 <section id="sifat-sifat-determinan">
-<h2><strong>Sifat-sifat determinan :</strong><a class="headerlink" href="#sifat-sifat-determinan" title="Link to this heading">#</a></h2>
+<h2><strong>Sifat - Sifat Determinan :</strong><a class="headerlink" href="#sifat-sifat-determinan" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Determinan dari matrix identitas adalah 1<br />
 contoh :</p></li>
@@ -721,8 +726,8 @@ g&amp;h&amp;i \end{array}\right]
 d&amp;e&amp;f\\
 g&amp;h&amp;i \end{array}\right]
 \end{equation}
-\)</span>$<br />
-det (B) = t * det(A)</p></li>
+\)</span><span class="math notranslate nohighlight">\(   
+\)</span>det (B) = t * det(A)$</p></li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -743,18 +748,19 @@ Determinan H = 5
 </div>
 </div>
 </div>
-<ol class="arabic simple" start="7">
-<li><p>Matriks segitiga atas adalah matriks bujursangkar yang semua entri dibawah diagonal utama bernilai nol.<br />
+</section>
+<section id="matriks-segitiga-atas">
+<h2><strong>Matriks Segitiga Atas</strong><a class="headerlink" href="#matriks-segitiga-atas" title="Link to this heading">#</a></h2>
+<p>adalah matriks bujur sangkar yang semua entri dibawah diagonal utama bernilai nol. Berikut merupakan contoh bentuk matriks segitiga atas :
 $<span class="math notranslate nohighlight">\(
 \begin{equation} A =
 \left[ \begin{array}{cccc} d1&amp; . &amp; .\\
 0&amp;d2&amp;.\\
 0&amp;0&amp;dn \end{array}\right]
 \end{equation}
-\)</span>$<br />
-det (A) = d1, d2, … ,dn
-Determinan dari matriks segitiga atas adalah hasil perkalian dari setiap elemen diaogonal</p></li>
-</ol>
+\)</span><span class="math notranslate nohighlight">\(  
+\)</span>det (A) = d1, d2, … ,dn$</p>
+<p>Determinan dari matriks segitiga atas adalah hasil perkalian dari setiap elemen diagonal</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
@@ -774,7 +780,7 @@ Determinan a = 4
 </div>
 </div>
 </div>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" start="7">
 <li><p>Melakukan operasi baris elementer terhadap suatu baris tidak akan merubah determinan dan inversnya</p></li>
 </ol>
 <div class="cell docutils container">
@@ -796,7 +802,7 @@ Determinan a = 5
 </div>
 </div>
 </div>
-<ol class="arabic simple" start="9">
+<ol class="arabic simple" start="8">
 <li><p>det (A) = det (A Tranpuse)</p></li>
 </ol>
 <div class="cell docutils container">
@@ -841,6 +847,14 @@ Determinan e tranpose = 5
 </section>
 <section id="ekspansi-kofaktor">
 <h2><strong>Ekspansi Kofaktor</strong><a class="headerlink" href="#ekspansi-kofaktor" title="Link to this heading">#</a></h2>
+<p>adalah salah satu metode yang digunakan untuk menghitung determinan dari sebuah matriks. Berikut adalah langkah-langkah umum untuk menghitung determinan menggunakan ekspansi kofaktor:</p>
+<ol class="arabic simple">
+<li><p>Pilih baris atau kolom tertentu dari matriks yang akan digunakan untuk menghitung determinan. Misalnya, pilih baris pertama atau kolom pertama.</p></li>
+<li><p>Untuk setiap elemen dalam baris atau kolom yang dipilih, hitung kofaktornya. Kofaktor dari elemen ( <span class="math notranslate nohighlight">\(a_{ij}\)</span> ) adalah ( <span class="math notranslate nohighlight">\((-1)^{i+j}\)</span> ) dikalikan dengan determinan dari minor ( <span class="math notranslate nohighlight">\(M_{ij}\)</span> ), di mana minor ( <span class="math notranslate nohighlight">\(M_{ij}\)</span> ) adalah matriks yang dihasilkan dari matriks asli dengan menghapus baris ke-i dan kolom ke-j.</p></li>
+<li><p>Kalikan setiap kofaktor dengan elemen yang bersangkutan, kemudian tambahkan semua hasil perkalian tersebut. Ini akan memberikan nilai determinan dari matriks.</p></li>
+</ol>
+<p>Rumus ekspansi kofaktor :</p>
+<p><span class="math notranslate nohighlight">\(\text{det}(A) = a_{k \times 1} \times C_{k \times 1} + a_{k \times 2} \times C_{k \times 2} + a_{k \times 3} \times C_{k \times 3}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
@@ -881,27 +895,85 @@ Determinan e = 0
 </div>
 </div>
 </div>
+<section id="berikut-ini-merupakan-matriks-4-x-4-yang-akan-dicari-determinannya-menggunakan-metode-langsung-dan-metode-manual">
+<h3>Berikut ini merupakan matriks 4 X 4 yang akan dicari determinannya menggunakan metode langsung dan metode manual<a class="headerlink" href="#berikut-ini-merupakan-matriks-4-x-4-yang-akan-dicari-determinannya-menggunakan-metode-langsung-dan-metode-manual" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="n">det_a</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Determinan e = </span><span class="si">{</span><span class="n">det_a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">det_e</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Determinan e = </span><span class="si">{</span><span class="n">det_e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[4 2 3 2]
- [2 3 3 2]
- [1 4 3 2]
- [1 2 2 1]] 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1  0  0  3]
+ [ 2  7  0  0]
+ [ 0  6  3  0]
+ [ 7  3  1 -5]] 
 
-Determinan e = 1
+Determinan e = -528
 </pre></div>
 </div>
 </div>
 </div>
-<p>Jadi determinannya adalah 1</p>
+</section>
+<section id="pembuktian">
+<h3>Pembuktian :<a class="headerlink" href="#pembuktian" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation} A =
+\left[ \begin{array}{cccc} 1&amp;0&amp;0&amp;3\\
+2&amp;7&amp;0&amp;0\\
+0&amp;6&amp;3&amp;0\\
+7&amp;3&amp;1&amp;-5 \end{array}\right]
+\end{equation}
+\end{split}\]</div>
+<p>Langkah 1:<br />
+Hitung determinan matriks minor dari baris pertama.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+\begin{vmatrix} 7 &amp; 0 &amp; 0 \\ 6 &amp; 3 &amp; 0 \\ 3 &amp; 1 &amp; -5\end{vmatrix}
+\end{align}\end{split}\]</div>
+<p>Langkah 2:<br />
+Gunakan aturan ekspansi kofaktor untuk matriks 3x3 dan hitung determinan untuk masing-masing matriks minor 2x2.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+&amp; = 7 \times \text{det} \begin{vmatrix} 3 &amp; 0 \\ 1 &amp; -5 \end{vmatrix} - 0 \times \text{det} \begin{vmatrix} 6 &amp; 0 \\ 3 &amp; -5 \end{vmatrix} + 0 \times \text{det} \begin{vmatrix} 6 &amp; 3 \\ 3 &amp; 1 \end{vmatrix} \\
+&amp; = 7 \times ((3 \times -5) - (0 \times 1)) - 0 \times ((6 \times (-5)) - (0 \times 3)) + 0 \times ((6 \times 1) - (3 \times 3)) \\
+&amp; = 7 \times (-15) - 0 + 0 \\
+&amp; = -105
+\end{align}\end{split}\]</div>
+<p>Jadi, determinan matriks minor dari baris pertama adalah -105.</p>
+<p>Langkah 3:<br />
+Hitung determinan matriks untuk elemen kedua dan ketiga dari baris pertama (yang bernilai nol). Karena keduanya nol, maka determinannya juga nol.</p>
+<p>Langkah 4:<br />
+Hitung determinan matriks minor dari elemen keempat baris pertama.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+\begin{vmatrix} 2 &amp; 7 &amp; 0 \\ 0 &amp; 6 &amp; 3 \\ 7 &amp; 3 &amp; 1\end{vmatrix}
+\end{align}\end{split}\]</div>
+<p>Langkah 5:<br />
+Hitung determinan matriks minor dari elemen keempat baris pertama dan gunakan aturan ekspansi kofaktor untuk matriks 3x3.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+&amp; = 2 \times \text{det} \begin{vmatrix} 6 &amp; 3 \\ 3 &amp; 1 \end{vmatrix} - 7 \times \text{det} \begin{vmatrix} 0 &amp; 3 \\ 7 &amp; 1 \end{vmatrix} + 0 \times \text{det} \begin{vmatrix} 0 &amp; 6 \\ 7 &amp; 3 \end{vmatrix} \\
+&amp; = 2 \times ((6 \times 1) - (3 \times 3)) - 7 \times ((0 \times 1) - (3 \times 7)) + 0\\
+&amp; = 2 \times (-3) - 7 \times (-21) \\
+&amp; = -6 + 147 \\
+&amp; = 141
+\end{align}\end{split}\]</div>
+<p>Jadi, determinan matriks minor dari elemen keempat baris pertama adalah 141.</p>
+<p>Langkah 6:<br />
+Hitung determinan keseluruhan dengan mengalikan masing-masing determinan matriks minor dengan kofaktornya, yaitu (-1)^(i+j), di mana i dan j adalah indeks baris dan kolom elemen tersebut.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+&amp;\text{det(A)} = 1 \times (-105) - 0 \times 0 + 0 \times 0 - 3 \times 141\\
+&amp;\text{det(A)} = -105 - 0 + 0 - 423 \\
+&amp;\text{det(A)} = -528
+\end{align}\end{split}\]</div>
+<p>Jadi, determinan dari matriks tersebut adalah -528.</p>
+</section>
 </section>
 </section>
 
@@ -960,8 +1032,13 @@ Determinan e = 1
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-determinan"><strong>Sifat-sifat determinan :</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-kofaktor"><strong>Ekspansi Kofaktor</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-determinan"><strong>Sifat - Sifat Determinan :</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-segitiga-atas"><strong>Matriks Segitiga Atas</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-kofaktor"><strong>Ekspansi Kofaktor</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-ini-merupakan-matriks-4-x-4-yang-akan-dicari-determinannya-menggunakan-metode-langsung-dan-metode-manual">Berikut ini merupakan matriks 4 X 4 yang akan dicari determinannya menggunakan metode langsung dan metode manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pembuktian">Pembuktian :</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
