@@ -1,0 +1,3 @@
+### **KOMPUTASI ALJABAR LINIER DAN MATRIKS**
+
+Disini saya akan Membagikan beberapa materi yang telah saya pelajari di perkuliahan tentang teori matriks dan aljabar linier, dan mengkaji beberapa implementasi dalam disiplin ilmu lain terutama untuk sain data. Aljabar linier adalah salah satu cabang matematika yang mempelajari sistem persamaan linier dan sifat-sifat matriks. Konsep aljabar linier sangat berguna dalam fisika, ilmu ekonomi dan sosial, ilmu alam, dan teknik. Karena penerapannya yang luas, maka aljabar linier adalah salah satu mata kuliah yang sangat perlu untuk dipelajari lebih mendalam.
